@@ -68,35 +68,22 @@
           <th>Read</th>
           <th>Remove</th>
         </tr>
+
+        <tbody id="book-list">
+        </tbody>
+
       </thead>
       <template id="book-row" class="max-w-3xl">
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td data-title></td>
+          <td data-author></td>
+          <td data-pages></td>
+          <td data-read></td>
+          <td><button data-remove>Remove</button></td>
         </tr>
       </template>
     </table>
 
-    <script>
-      const bookRowTemplate = document.getElementById('book-row');
-      const bookTable = document.querySelector('table');
-
-      const addBookForm = document.getElementById('add-book');
-      const titleInput = document.getElementById('titleInput');
-      const authorInput = document.getElementById('authorInput');
-      const pagesInput = document.getElementById('pagesInput');
-      const readInput = document.getElementById('readInput');
-
-      const books = [];
-
-      function addBook(e) {
-        e.preventDefault();
-
-        const book = {
-          title: titleInput.value,
-    </script>
+    <script type="module" src="src/index.js"> </script>
   </body>
 </html>
